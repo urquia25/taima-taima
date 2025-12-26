@@ -1,6 +1,10 @@
 
 import { Species } from './types';
 
+export const getStorageUrl = (fileName: string) => {
+  return `https://cxlvzohdcxefmayjdmwm.supabase.co/storage/v1/object/public/especies-taima/${fileName}`;
+};
+
 export const ESPECIES: Species[] = [
   { 
     id: 'gliptodonte', 
@@ -14,7 +18,7 @@ export const ESPECIES: Species[] = [
     id: 'mastodonte', 
     nombre: 'Mastodonte', 
     cientifico: 'Notiomastodon platensis', 
-    silueta: 'https://images.unsplash.com/photo-1581022295087-35e593704911?auto=format&fit=crop&q=80&w=800', 
+    silueta: 'https://images.unsplash.com/photo-1581022295087-35e593704911?auto=format&q=80&w=800', 
     colorBase: '#2980B9',
     descripcion: 'Un pariente lejano de los elefantes que frecuentaba los manantiales de Taima Taima.'
   },
@@ -22,7 +26,7 @@ export const ESPECIES: Species[] = [
     id: 'sable', 
     nombre: 'Dientes de Sable', 
     cientifico: 'Smilodon populator', 
-    silueta: 'https://images.unsplash.com/photo-1564349683136-77e08bef1ef1?auto=format&fit=crop&q=80&w=800', 
+    silueta: 'https://images.unsplash.com/photo-1564349683136-77e08bef1ef1?auto=format&q=80&w=800', 
     colorBase: '#9C4221',
     descripcion: 'Un depredador feroz con caninos largos como cuchillos que vivió en las sabanas de Falcón.'
   }
